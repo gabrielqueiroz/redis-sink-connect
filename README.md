@@ -13,3 +13,7 @@ What does the docker compose will start?
 - Kafka
 - Zookeeper
 - Redis Sink Connector
+
+# How do I use this PoC?
+
+To run this PoC, you can just run the script `./poc.sh`. It will do all the job, and produce a test message to a specific Kafka topic. You can them access Redis, using redis-cli for example, to check the keys generate from the topic.
