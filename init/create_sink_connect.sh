@@ -10,7 +10,7 @@ curl -i -X POST \
    "config": {
      "connector.class": "com.datamountaineer.streamreactor.connect.redis.sink.RedisSinkConnector",
      "connect.redis.port": "6379",
-     "connect.redis.kcql": "INSERT INTO test SELECT _class, name, age FROM redis-sink PK key",
+     "connect.redis.kcql": "INSERT INTO test: SELECT name, age FROM redis-sink PK key",
      "tasks.max": "1",
      "topics": "redis-sink",
      "connect.redis.host": "redis",
